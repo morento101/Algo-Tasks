@@ -1,12 +1,6 @@
 """This module provides function to get perfect numbers."""
 import time
-
-
-def is_natural_number(number: int) -> bool:
-    """
-    Returns True if the number is natural.
-    """
-    return isinstance(number, int) and number > 0
+from utils import is_natural_number
 
 
 def check_simple_number(number: int) -> bool:

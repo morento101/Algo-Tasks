@@ -27,7 +27,7 @@ def sieve_of_eratosthenes(target: int) -> list[int]:
     return result
 
 
-def get_mersenne_sequence_limited_by_natural_number(limit: int) -> list[int]:
+def task_559(limit: int) -> list[int]:
     """
     Returns list of Mersenne numbers, less than limit argument
     """

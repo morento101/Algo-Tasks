@@ -1,7 +1,7 @@
 """226. Given natural numbers m, n. Get all natural common multiples, smaller m*n."""
 
 
-def get_natural_common_multiples(first_arg: int, second_arg: int) -> list[int]:
+def task_226(first_arg: int, second_arg: int) -> list[int]:
     """Returns all natural common multiples of first_arg & second_arg less than first_arg * second_arg
 
     :param first_arg: int

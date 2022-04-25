@@ -1,11 +1,5 @@
 """This module provides function to get digits length in the number."""
-
-
-def is_natural_number(number: int) -> bool:
-    """
-    Returns True if the number is natural.
-    """
-    return isinstance(number, int) and number > 0
+from utils import is_natural_number
 
 
 def task_86a(number: int) -> int:
