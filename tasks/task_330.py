@@ -1,5 +1,5 @@
 """This module provides function to get perfect numbers."""
-import time
+from time import time
 from utils import is_natural_number
 
 
@@ -40,6 +40,6 @@ def task_330(number: int) -> list[int]:
 
 if __name__ == "__main__":
     NUMBER = 100000000000
-    start = time.time()
+    start = time()
     print(task_330(NUMBER))
-    print(time.time() - start)
+    print(time() - start)

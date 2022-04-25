@@ -21,7 +21,7 @@ class TestTask559(unittest.TestCase):
 
     def test_arg_incorrect_type(self):
         """
-        Test that the arg has incorrect data type a TypeError exception is called.
+        Test that the arg has incorrect data type a AssertionError exception is called.
         """
         with self.assertRaises(AssertionError):
             sieve_of_eratosthenes("10")

@@ -7,7 +7,6 @@ class TestTask226(unittest.TestCase):
     """
     Tests for function task_226.
     """
-
     def test_valid(self):
         """
         Test that task_226 function returns correct result.
