@@ -24,7 +24,7 @@ def info() -> str:
     return info_string
 
 
-def task_87(n, m) -> int:
+def run(n, m) -> int:
     """
     Implementation of the task #87.
     """
