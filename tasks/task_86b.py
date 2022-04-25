@@ -3,7 +3,9 @@
 
 # task 86b
 def task_86b(number: int) -> int:
-    """ Get digits sum in the number. """
+    """
+    Get digits sum in the number.
+    """
     if not isinstance(number, int):
         raise TypeError("Argument should be integer!")
     return sum([int(num) for num in str(number)])
