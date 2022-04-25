@@ -30,5 +30,6 @@ class TestTask87(unittest.TestCase):
         """
         Test when one of args is incorrect data type a TypeError exception is called.
         """
-        self.assertRaises(TypeError, task_87, "5", 10)
-        self.assertRaises(TypeError, task_87, 5, "10")
+        with self.assertRaises(AssertionError):
+            task_87("5", 10)
+            task_87(5, "10")
