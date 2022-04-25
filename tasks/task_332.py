@@ -4,14 +4,16 @@ expression: number = x**2 + y**2 + z**2 + t**2
 """
 
 
+from utils import is_natural_number
+
+
 def task_332(number: int) -> tuple:
     """
     Find four numbers which match expression:
     number = x**2 + y**2 + z**2 + t**2
     """
 
-    assert isinstance(number, int), "Wrong parameter type, must be natural int"
-    assert number > 0, "Wrong parameter value, must be natural int"
+    assert is_natural_number(number), "Wrong argument, must be natural integer"
     sqr = int(number ** 0.5) + 1
 
     for x_val in range(sqr):
