@@ -3,7 +3,9 @@ import time
 
 
 def check_simple_number(number: int) -> bool:
-    """ Check that number is simple. """
+    """
+    Check that number is simple.
+    """
     counter = 0
     for i in range(1, int(number / 2) + 1):
         if counter > 2:
