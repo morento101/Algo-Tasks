@@ -1,20 +1,27 @@
 """This module provides function to get perfect numbers."""
-import time
+from time import time
+from utils import is_natural_number
 
 
 def check_simple_number(number: int) -> bool:
-    """ Check that number is simple. """
+    """
+    Check that number is simple.
+    """
+    assert is_natural_number(number), "The number should be natural"
     counter = 0
     for i in range(1, int(number / 2) + 1):
         if counter > 2:
             break
         if number % i == 0:
             counter += 1
-    return True if counter == 1 else False
+    return counter == 1
 
 
 def task_330(number: int) -> list[int]:
-    """ Get perfect numbers in range(1, number). """
+    """
+    Get perfect numbers in range(1, number).
+    """
+    assert is_natural_number(number), "The number should be natural"
     if number <= 6:
         return []
 
@@ -33,6 +40,6 @@ def task_330(number: int) -> list[int]:
 
 if __name__ == "__main__":
     NUMBER = 100000000000
-    start = time.time()
+    start = time()
     print(task_330(NUMBER))
-    print(time.time() - start)
+    print(time() - start)
