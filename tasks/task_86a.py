@@ -2,7 +2,9 @@
 
 
 def task_86a(number: int) -> int:
-    """ Get digits length in the number. """
+    """
+    Get digits length in the number.
+    """
     if not isinstance(number, int):
         raise TypeError("Argument should be integer!")
     return len(str(number))
