@@ -34,7 +34,6 @@ def get_mersenne_sequence_limited_by_natural_number(limit: int) -> list[int]:
     result = []
     # get natural numbers list
     sieve = sieve_of_eratosthenes(limit)
-
     # form list of Mersenne numbers limited by given argument
     for natural_number in sieve:
         mersenne_candidate = pow(2, natural_number) - 1
@@ -50,7 +49,6 @@ def info() -> str:
     """
     Task & arguments description
     """
-
     info_string = ("Task 226. Function returns list of Mersenne numbers, less than argument n.\n"
                    "Please enter n (or 'R' to return to main menu): "
                    )
@@ -59,9 +57,8 @@ def info() -> str:
 
 
 def run(n) -> list[int]:
-    """Implementation of the task #559.
-
-    :return: list[int]
+    """
+    Implementation of the task #559.
     """
 
     return get_mersenne_sequence_limited_by_natural_number(n)
