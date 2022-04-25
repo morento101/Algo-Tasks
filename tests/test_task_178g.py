@@ -7,7 +7,6 @@ class Task178gTests(TestCase):
     """
     Tests for task 178g
     """
-
     def test_task_178g_positive(self):
         """
         Test with positive numbers
