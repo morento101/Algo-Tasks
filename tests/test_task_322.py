@@ -2,8 +2,7 @@
 from unittest import TestCase
 from unittest import main
 
-from tasks.task_322 import get_divisors_list
-from tasks.task_322 import get_number_with_largest_sum_of_divisors
+from tasks.task_322 import (get_divisors_list, get_number_with_largest_sum_of_divisors)
 
 
 class TestGetDivisorsList(TestCase):

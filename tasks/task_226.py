@@ -2,17 +2,14 @@
 
 
 def get_natural_common_multiples(first_arg: int, second_arg: int) -> list[int]:
-    """Returns all natural common multiples of first_arg & second_arg less than first_arg * second_arg
-
-    :param first_arg: int
-    :param second_arg: int
-    :return: list[int]
     """
-
+    Returns all natural common multiples of first_arg & second_arg less than first_arg * second_arg
+    """
     limit = first_arg * second_arg
     suspect = second_arg
     result = []
     while suspect < limit:
+        # Check whether the increment of the second number is divisible by the first
         if suspect % first_arg == 0:
             result.append(suspect)
         suspect += second_arg
@@ -21,11 +18,9 @@ def get_natural_common_multiples(first_arg: int, second_arg: int) -> list[int]:
 
 
 def info() -> str:
-    """Task & arguments description
-
-    :return: str
     """
-
+    Task & arguments description
+    """
     info_string = ("Task 226. Function returns all natural common multiples of n & m less than n*m.\n"
                    "Please enter n, m separated by space (or 'R' to return to main menu): "
                    )
@@ -34,9 +29,8 @@ def info() -> str:
 
 
 def run(n, m) -> list[int]:
-    """Implementation of the task #226.
-
-    :return: list[int]
+    """
+    Implementation of the task #226.
     """
 
     return get_natural_common_multiples(n, m)
