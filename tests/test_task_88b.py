@@ -1,4 +1,5 @@
 """Test of task_88b.py."""
+
 from unittest import TestCase
 from unittest import main
 

@@ -1,4 +1,5 @@
 """559. Given a natural number n. Find all Mersenne numbers less than n.
+
 (A prime number is called a Mersenne number if it can
 be represented as 2^p - 1, where p is also a prime number.)
 """
