@@ -1,5 +1,4 @@
-"""
-108 Given a natural number, find the smallest possible number which matches 
+"""108 Given a natural number, find the smallest possible number which matches 
 pattern 2**r and is bigger than the given number
 """
 

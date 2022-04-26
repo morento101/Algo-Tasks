@@ -1,5 +1,4 @@
-"""
-331 Given a natural number, represent it in the sum of three squares.
+"""331 Given a natural number, represent it in the sum of three squares.
 Return all possible represantations
 """
 
