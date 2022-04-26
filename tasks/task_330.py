@@ -1,4 +1,5 @@
 """This module provides function to get perfect numbers."""
+
 from time import time
 from utils import is_natural_number
 

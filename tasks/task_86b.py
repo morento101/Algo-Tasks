@@ -1,4 +1,5 @@
 """This module provides function to get digits sum in the number."""
+
 from utils import is_natural_number
 
 

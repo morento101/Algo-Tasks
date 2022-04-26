@@ -1,4 +1,5 @@
-"""Group tests for tasks."""
+"""Module with tests for task 226."""
+
 import unittest
 from tasks.task_226 import task_226
 
@@ -17,8 +18,8 @@ class TestTask226(unittest.TestCase):
 
     def test_one_of_args_is_one(self):
         """Test when one of args is zero result is empty list."""
-        self.assertListEqual(task_226(1, 10), [1])
-        self.assertListEqual(task_226(12, 1), [1])
+        self.assertListEqual(task_226(1, 10), [])
+        self.assertListEqual(task_226(12, 1), [])
 
     def test_args_has_incorrect_type(self):
         """Test when one of args is incorrect data type a TypeError exception is called."""

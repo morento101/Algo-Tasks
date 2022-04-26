@@ -1,4 +1,5 @@
-"""Group tests for tasks."""
+"""Module with tests for task 87."""
+
 import unittest
 from tasks.task_87 import task_87
 
