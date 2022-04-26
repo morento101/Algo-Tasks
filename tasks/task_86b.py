@@ -1,4 +1,4 @@
-"""This module provides function to get digits sum in the number."""
+"""86b. Given a natural number n. Find digits sum in the number n."""
 
 from utils import is_natural_number
 
