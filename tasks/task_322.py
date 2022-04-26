@@ -1,6 +1,6 @@
 """This module contains realisation of task 322."""
 
-from .utils import is_natural_number
+from utils import is_natural_number
 
 
 def get_number_with_largest_sum_of_divisors(start: int, end: int) -> int:
@@ -8,7 +8,7 @@ def get_number_with_largest_sum_of_divisors(start: int, end: int) -> int:
     assert is_natural_number(start), "start should be natural numbers"
     assert is_natural_number(end), "end should be natural numbers"
     assert end >= start, "End point should be greater than start"
-
+    
     # List of all sums of divisors
     sums = [sum(get_divisors_list(number)) for number in range(start, end)]
     # Get the largest sum in list

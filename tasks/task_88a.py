@@ -1,6 +1,6 @@
 """This module contains realisation of task 88a."""
 
-from .utils import is_natural_number
+from utils import is_natural_number
 
 
 def is_3_in_square_of_number(number: int) -> bool:
