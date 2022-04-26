@@ -1,4 +1,5 @@
-"""Group tests for tasks."""
+"""Module with tests for task 559."""
+
 import unittest
 from tasks.task_559 import task_559, sieve_of_eratosthenes
 

@@ -1,4 +1,5 @@
-"""This module provides function to get digits length in the number."""
+"""86a. Given a natural number n. Find digits length in the number n."""
+
 from utils import is_natural_number
 
 

@@ -1,4 +1,12 @@
-"""This module provides function to get perfect numbers."""
+"""330.
+
+A natural number is call to be perfect if it is equal
+to the sum of all its divisors except itself
+The number 6 is perfect, since 6 = 1 + 2 + 3.
+The number 8 is not perfect, since 8 ≠ 1 + 2 + 4.
+A natural number n is given. Get all perfect numbers less than n.
+"""
+
 from time import time
 from utils import is_natural_number
 
