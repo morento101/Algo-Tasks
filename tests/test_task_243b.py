@@ -6,8 +6,9 @@ from unittest import main
 from tasks.task_243b import task_243b
 
 
-class TestTask243a(TestCase):
-    """Test for function test_107"""
+class TestTask243b(TestCase):
+    """Test for function test_243b"""
+
     def test_valid(self):
         """This method is for testing the correct result"""
         self.assertEqual(task_243b(13), [(3, 2)])

@@ -7,7 +7,8 @@ from tasks.task_243a import task_243a
 
 
 class TestTask243a(TestCase):
-    """Test for function test_107"""
+    """Test for function test_243a"""
+
     def test_valid(self):
         """This method is for testing the correct result"""
         self.assertEqual(task_243a(13), {2: 3})
