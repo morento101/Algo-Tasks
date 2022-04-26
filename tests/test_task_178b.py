@@ -25,7 +25,8 @@ class TestTask178b(TestCase):
 
     def test_task178b_valid_str(self):
         """Test when one of args is incorrect data type an 
-        AssertionError exception is called."""
+        AssertionError exception is called.
+        """
         entry_sequence = "(1, 2, 3, 4, 5, 6)"
         with self.assertRaises(AssertionError):
             task_178b(entry_sequence)

@@ -30,16 +30,18 @@ class TestTask554(TestCase):
         answer = task_554(entry_sequence)
         self.assertEqual(expected_answer, answer)
 
-    def test_task178v_valid_str(self):
+    def test_task554_valid_str(self):
         """Test when one of args is incorrect data type an 
-        AssertionError exception is called."""
+        AssertionError exception is called.
+        """
         entry_sequence = ""
         with self.assertRaises(AssertionError):
             task_554(entry_sequence)
 
-    def test_task178v_valid_str(self):
+    def test_task554_valid_str(self):
         """Test when one of args is incorrect data type an 
-        AssertionError exception is called."""
+        AssertionError exception is called.
+        """
         entry_sequence = []
         with self.assertRaises(AssertionError):
             task_554(entry_sequence)
