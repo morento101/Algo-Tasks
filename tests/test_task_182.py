@@ -1,6 +1,7 @@
 """Module with tests for task 182"""
 
 from unittest import TestCase
+
 from tasks.tasks_182 import task_182
 
 
