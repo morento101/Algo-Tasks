@@ -4,9 +4,12 @@
 be represented as 2^p - 1, where p is also a prime number.)
 """
 
+from utils import is_natural_number
+
 
 def sieve_of_eratosthenes(target: int) -> list[int]:
     """Return list of prime numbers (Eratosthenes Algorithm), less than target argument."""
+    assert is_natural_number(target), "The number should be natural"
     # an list of Bool vales to index numbers 2 to n (0 to n-2)
     sieve = [True]*(target-1)
     # limit for loop
@@ -26,6 +29,7 @@ def sieve_of_eratosthenes(target: int) -> list[int]:
 
 def task_559(limit: int) -> list[int]:
     """Return list of Mersenne numbers, less than limit argument."""
+    assert is_natural_number(limit), "The number should be natural"
     result = []
     # get natural numbers list
     sieve = sieve_of_eratosthenes(limit)
