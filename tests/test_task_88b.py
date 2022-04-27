@@ -13,13 +13,11 @@ class TestReverseNumber(TestCase):
         """Test with 0 as function argument."""
         with self.assertRaises(AssertionError) as test_exception:
             task_88b(0)
-        self.assertEqual("Number should be greater than 0", test_exception.exception.args[0])
 
     def test_with_negative_argument(self):
         """Test with negative number as function argument."""
         with self.assertRaises(AssertionError) as test_exception:
             task_88b(-1)
-        self.assertEqual("Number should be greater than 0", test_exception.exception.args[0])
 
     def test_negative_result(self):
         """Test with negative result expectation."""
