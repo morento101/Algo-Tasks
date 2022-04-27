@@ -1,4 +1,6 @@
-"""Module with task 178b."""
+"""Task 178c, given sequence of numbers. 
+Count numbers which are squares of multiples of two.
+"""
 
 from typing import Sequence
 

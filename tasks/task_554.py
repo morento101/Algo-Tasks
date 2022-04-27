@@ -1,15 +1,17 @@
-"""Module with task 554."""
+"""Task 554, given number n.
+Return all pythagorean triples where a <= b <= c <= n.
+"""
 
 from typing import List
 
 
-def task_554(n: int) -> List[tuple]:
+def task_554(number: int) -> List[tuple]:
     """Returns list of tuples with all pythagorean triples which satisfy
     following equations: a^2 + b^2 = c^2 and a <= b <= c <= n
     """
     res = []
-    domain = range(1, n+1)
-    n_square = n ** 2
+    domain = range(1, number+1)
+    n_square = number ** 2
 
     for a in domain:
         for b in domain:
