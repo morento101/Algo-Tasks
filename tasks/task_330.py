@@ -8,7 +8,7 @@ A natural number n is given. Get all perfect numbers less than n.
 """
 
 from time import time
-from utils import is_natural_number
+from tasks.utils import is_natural_number
 
 
 def check_simple_number(number: int) -> bool:

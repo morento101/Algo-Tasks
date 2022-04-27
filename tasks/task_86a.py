@@ -1,6 +1,6 @@
 """86a. Given a natural number n. Find digits length in the number n."""
 
-from utils import is_natural_number
+from tasks.utils import is_natural_number
 
 
 def task_86a(number: int) -> int:
