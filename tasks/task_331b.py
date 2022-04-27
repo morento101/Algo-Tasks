@@ -1,5 +1,5 @@
 """331 Given a natural number, represent it in the sum of three squares.
-Return all possible represantations
+Return all possible representations
 """
 
 from utils import is_natural_number
@@ -9,8 +9,8 @@ def square_sum_equals(x: int, y: int, z: int, number: int) -> bool:
     """Return True if x^2 + y^2 + z^2 == number"""
     return x ** 2 + y ** 2 + z ** 2 == number
 
-def task_108(number: int) -> list[tuple]:
-    """Return all represantations of a *num* as a sum of
+def task_331b(number: int) -> list[tuple]:
+    """Return all representations of a *num* as a sum of
         three squared numbers, if possible. Or return
         an empty list.
     """
