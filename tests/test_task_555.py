@@ -1,16 +1,13 @@
-"""Module with tests for task 555"""
+"""Module with tests for task 555."""
+
 from tasks.task_555 import task_555
 from unittest import TestCase
 
 
 class Task555Tests(TestCase):
-    """
-    Tests for task 555
-    """
+    """Tests for task 555"""
     def test_task_555_valid_3(self):
-        """
-        Test with argument 3
-        """
+        """Test with argument 3"""
         expected = [
             [1], 
             [1, 1], 
@@ -20,9 +17,7 @@ class Task555Tests(TestCase):
         self.assertEqual(expected, actual)
 
     def test_task_555_valid_5(self):
-        """
-        Test with argument 5
-        """
+        """Test with argument 5"""
         expected = [
             [1], 
             [1, 1], 
@@ -34,9 +29,7 @@ class Task555Tests(TestCase):
         self.assertEqual(expected, actual)
 
     def test_task_555_valid_8(self):
-        """
-        Test with argument 8
-        """
+        """Test with argument 8"""
         expected = [
             [1], 
             [1, 1], 
@@ -51,15 +44,11 @@ class Task555Tests(TestCase):
         self.assertEqual(expected, actual)
 
     def test_task_555_valid_zero(self):
-        """
-        Test for argument 0
-        """
+        """Test for argument 0"""
         actual = task_555(0)
         self.assertEqual([], actual)
 
     def test_pascal_negative(self):
-        """
-        Test for negative argument
-        """
+        """Test for negative argument"""
         actual = task_555(-1)
         self.assertEqual([], actual)

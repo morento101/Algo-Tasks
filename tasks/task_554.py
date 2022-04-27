@@ -1,10 +1,10 @@
-"""Module with task 178b"""
+"""Module with task 554."""
+
 from typing import List
 
 
 def task_554(n: int) -> List[tuple]:
-    """
-    Returns list of tuples with all pythagorean triples which satisfy
+    """Returns list of tuples with all pythagorean triples which satisfy
     following equations: a^2 + b^2 = c^2 and a <= b <= c <= n
     """
     res = []
