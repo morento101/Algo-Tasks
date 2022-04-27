@@ -11,7 +11,6 @@ def task555(num: int) -> list:
         raise TypeError("Argument should be integer!")
     if num <= 0:
         raise ValueError("Argument is not natural number!")
-
     return [[int((fac(num) / (fac(k) * fac(num - k)))) for k in range(0, num + 1)] for num in range(0, num)]
 
 
