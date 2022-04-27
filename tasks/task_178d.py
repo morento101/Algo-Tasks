@@ -2,17 +2,16 @@
 
 from math import factorial as fac
 
+from tasks.utils import is_natural_number
 
-def task178d(n: int, arr: list) -> int:
+
+def task178d(num: int, arr: list) -> int:
     """ Return number that satisfy a following condition:
     2**k< ak < k!
     """
-    if not isinstance(n, int):
-        raise TypeError("Argument should be integer!")
-    if n <= 0:
-        raise ValueError("Argument is not natural number!")
-    c = 0
-    for elem in range(n):
+     assert is_natural_number(num), "The number should be natural"
+    count = 0
+    for elem in range(num):
         if arr[elem] > 2**elem and arr[elem] < fac(elem):
-            c += 1
-    return c
+            count += 1
+    return count
