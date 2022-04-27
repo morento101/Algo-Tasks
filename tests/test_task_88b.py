@@ -1,4 +1,4 @@
-"""This module is for testing task 88b."""
+"""Test of task_88b.py."""
 
 from unittest import TestCase
 from unittest import main
@@ -6,31 +6,32 @@ from unittest import main
 from tasks.task_88b import task_88b
 
 
-class TestTask88b(TestCase):
-    """This class is for testing function task_88b."""
+class TestReverseNumber(TestCase):
+    """Tests for function: reverse_number."""
 
-    def test_valid(self):
-        """This method is for testing the correct result."""
-        self.assertEqual(task_88b(327123), 321723)
-
-    def test_type(self):
-        """This method is for testing the TypeError."""
-        with self.assertRaises(AssertionError):
-            task_88b("!22")
-        with self.assertRaises(AssertionError):
-            task_88b([])
-
-    def test_value(self):
-        """This method is for testing the ValueError."""
-        with self.assertRaises(AssertionError):
+    def test_with_zero_argument(self):
+        """Test with 0 as function argument."""
+        with self.assertRaises(AssertionError) as test_exception:
             task_88b(0)
-        with self.assertRaises(AssertionError):
-            task_88b(-23)
+        self.assertEqual("Number should be greater than 0", test_exception.exception.args[0])
 
-    def test_negative(self):
-        """This method is for testing the incorrect result."""
-        self.assertNotEqual(task_88b(327123), 321123)
+    def test_with_negative_argument(self):
+        """Test with negative number as function argument."""
+        with self.assertRaises(AssertionError) as test_exception:
+            task_88b(-1)
+        self.assertEqual("Number should be greater than 0", test_exception.exception.args[0])
+
+    def test_negative_result(self):
+        """Test with negative result expectation."""
+        self.assertNotEqual(task_88b(7), 0)
+        self.assertNotEqual(task_88b(123456789), 987654320)
+
+    def test_positive_result(self):
+        """Test with positive result expectation."""
+        self.assertEqual(task_88b(1), 1)
+        self.assertEqual(task_88b(123456789), 987654321)
+        self.assertEqual(task_88b(123454321), 123454321)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
