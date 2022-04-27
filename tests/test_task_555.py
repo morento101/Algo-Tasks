@@ -6,6 +6,7 @@ from unittest import TestCase
 
 class Task555Tests(TestCase):
     """Tests for task 555"""
+    
     def test_task_555_valid_3(self):
         """Test with argument 3"""
         expected = [

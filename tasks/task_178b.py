@@ -14,7 +14,6 @@ def task_178b(numbers: Sequence[int]) -> int:
     count = 0
 
     for number in numbers:
-        assert is_natural_number(number)
         if not number % 3 and number % 5:
             count += 1
 
