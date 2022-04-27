@@ -1,7 +1,7 @@
 """Module with tests for task 559."""
 
 import unittest
-from tasks.task_559 import task_559, sieve_of_eratosthenes
+from tasks.task_559 import (task_559, sieve_of_eratosthenes)
 
 
 class TestTask559(unittest.TestCase):
@@ -22,12 +22,15 @@ class TestTask559(unittest.TestCase):
             task_559("10")
 
     def test_sieve_of_eratosthenesone_arg_is_zero(self):
-        """Test when one of args is 0 result is empty list."""
-        self.assertListEqual(sieve_of_eratosthenes(0), [])
+        """Test that number is zero a AssertionError exception is called."""
+        with self.assertRaises(AssertionError):
+            sieve_of_eratosthenes(0)
 
     def test_arg_is_zero(self):
-        """Test when one of args is 0 result is empty list."""
-        self.assertListEqual(task_559(0), [])
+        """Test that number is zero a AssertionError exception is called."""
+        with self.assertRaises(AssertionError):
+            task_559(0)
+
 
     def test_sieve_of_eratosthenesone_arg_is_one(self):
         """Test when one of args is 1 result is [1, ]."""
