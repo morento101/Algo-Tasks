@@ -1,6 +1,6 @@
 """87. Given a natural n, m. Get the sum of m last digits of the number n."""
 
-from utils import is_natural_number
+from tasks.utils import is_natural_number
 
 
 def task_87(target: int, tail_size: int) -> int:

@@ -4,7 +4,7 @@
 be represented as 2^p - 1, where p is also a prime number.)
 """
 
-from utils import is_natural_number
+from tasks.utils import is_natural_number
 
 
 def sieve_of_eratosthenes(target: int) -> list[int]:
