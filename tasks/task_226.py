@@ -1,8 +1,12 @@
 """226. Given natural numbers m, n. Get all natural common multiples, smaller m*n."""
 
+from utils import is_natural_number
+
 
 def task_226(first_arg: int, second_arg: int) -> list[int]:
     """Return all natural common multiples of first_arg & second_arg less than first_arg * second_arg."""
+    assert is_natural_number(first_arg), "The number should be natural"
+    assert is_natural_number(second_arg), "The number should be natural"
     limit = first_arg * second_arg
     suspect = second_arg
     result = []
