@@ -5,7 +5,7 @@ from math import factorial as fac
 from tasks.utils import is_natural_number
 
 
-def task178d(num: int, arr: list) -> int:
+def task_178d(num: int, arr: list) -> int:
     """ Return number that satisfy a following condition:
     2**k< ak < k!
     """
