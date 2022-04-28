@@ -1,7 +1,6 @@
 """Module with task 178d"""
 
 from math import factorial as fac
-
 from tasks.utils import is_natural_number
 
 
