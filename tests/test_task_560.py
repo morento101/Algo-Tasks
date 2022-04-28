@@ -7,6 +7,7 @@ from tasks.task_560 import task_560
 
 class TestTask560(TestCase):
     """Tests for task 560"""
+    
     def test_valid(self):
         """ Test with valid result """
         test_res = ['220 284']
