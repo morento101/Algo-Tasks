@@ -9,7 +9,7 @@ def task_178b(numbers: Sequence[int]) -> int:
     """Return amount of numbers from sequence which are 
     multiples of three but not multiples of five
     """
-    assert type(numbers) in (tuple, set, list), "Please, sequence must be tuple, set or list"
+    assert type(numbers) in (tuple, set, list), "Sequence must be tuple, set or list"
     count = 0
 
     for number in numbers:
