@@ -6,6 +6,7 @@ from tasks.tasks_323 import task_323
 
 class TestTask323(TestCase):
     """Tests for task 323"""
+    
     def test_assert_equal(self):
         """ Test with positive number """
         test_n = 6
