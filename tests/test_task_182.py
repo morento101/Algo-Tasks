@@ -7,6 +7,7 @@ from tasks.tasks_182 import task_182
 
 class TestTask182(TestCase):
     """ Tests for task 182 """
+    
     def test_assert_equal(self):
         """ Test with positive numbers in sequence """
         test_n = 5
