@@ -3,14 +3,13 @@ Count numbers, which are multiples of three but not multiples of five
 """
 
 from typing import Sequence
-from utils import is_natural_number
 
 
 def task_178b(numbers: Sequence[int]) -> int:
     """Return amount of numbers from sequence which are 
     multiples of three but not multiples of five
     """
-
+    assert type(numbers) in (tuple, set, list), "Please, sequence must be tuple, set or list"
     count = 0
 
     for number in numbers:
