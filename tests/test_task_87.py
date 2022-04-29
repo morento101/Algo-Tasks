@@ -8,9 +8,10 @@ class TestTask87(unittest.TestCase):
     """Tests for function task_87."""
 
     def test_arg_is_zero(self):
-        """Test that number is zero a ValueError exception is called."""
+        """Test that number is zero a AssertionError exception is called."""
         with self.assertRaises(AssertionError):
             task_87(0, 1)
+            task_87(1, 0)
 
     def test_tail_size_one(self):
         """Test that tail size equal 1 returns last digit."""

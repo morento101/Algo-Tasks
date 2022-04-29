@@ -1,6 +1,6 @@
 """226. Given natural numbers m, n. Get all natural common multiples, smaller m*n."""
 
-from utils import is_natural_number
+from tasks.utils import is_natural_number
 
 
 def task_226(first_arg: int, second_arg: int) -> list[int]:

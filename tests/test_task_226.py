@@ -12,9 +12,10 @@ class TestTask226(unittest.TestCase):
         self.assertListEqual(task_226(5, 10), [10, 20, 30, 40])
 
     def test_one_of_args_is_zero(self):
-        """Test when one of args is zero result is empty list."""
-        self.assertListEqual(task_226(0, 10), [])
-        self.assertListEqual(task_226(10, 0), [])
+        """Test that number is zero a AssertionError exception is called."""
+        with self.assertRaises(AssertionError):
+            self.assertListEqual(task_226(0, 10), [])
+            self.assertListEqual(task_226(10, 0), [])
 
     def test_one_of_args_is_one(self):
         """Test when one of args is zero result is empty list."""
