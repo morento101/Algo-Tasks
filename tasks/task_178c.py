@@ -9,7 +9,7 @@ def task_178c(numbers: Sequence[int]) -> int:
     """Returns count of numbers from sequence which are
     squares of multiples of two
     """
-    assert type(numbers) in (tuple, set, list), "Please, sequence must be tuple, set or list"
+    assert isinstance(numbers, (tuple, set, list)), "Sequence must be tuple, set or list"
     count = 0
 
     for number in numbers:
