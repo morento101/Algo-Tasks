@@ -1,6 +1,6 @@
 """This module contains realisation of task 322."""
 
-from utils import is_natural_number
+from tasks.utils import is_natural_number
 
 
 def get_number_with_largest_sum_of_divisors(start: int, end: int) -> int:

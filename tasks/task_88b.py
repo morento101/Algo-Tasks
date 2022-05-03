@@ -1,6 +1,6 @@
 """This module contains realisation of task 88b."""
 
-from utils import is_natural_number
+from tasks.utils import is_natural_number
 
 
 def reverse_number(number: int) -> int:
