@@ -1,6 +1,6 @@
 """Module with tests for task 560"""
 
-from unitest import TestCase
+from unittest import TestCase
 
 from tasks.task_560 import task_560
 
