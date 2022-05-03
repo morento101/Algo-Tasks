@@ -2,7 +2,7 @@
 pattern 2**r and is bigger than the given number
 """
 
-from utils import is_natural_number
+from tasks.utils import is_natural_number
 
 
 def task_108(number: int) -> int:
