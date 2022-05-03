@@ -1,6 +1,6 @@
 """This module contains realisation of task 323."""
 
-from utils import is_natural_number
+from tasks.utils import is_natural_number
 
 
 def task_323(number: int) -> list:

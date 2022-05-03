@@ -1,6 +1,6 @@
 """88(v) Given natural number, swap first and last digit of a number"""
 
-from utils import is_natural_number
+from tasks.utils import is_natural_number
 
 
 def task_88v(number: int) -> int:
