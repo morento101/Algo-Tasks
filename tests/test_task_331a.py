@@ -3,7 +3,7 @@
 from unittest import TestCase
 from unittest import main
 
-from task.task_331a import task_331a
+from tasks.task_331a import task_331a
 
 
 class TestTask331a(TestCase):

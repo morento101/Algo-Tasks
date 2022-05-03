@@ -1,5 +1,5 @@
 """Implementation of task 243a"""
-from tasks_107 import validate_number
+from task_107 import validate_number
 
 
 def _is_prime(number: int) -> bool:
