@@ -4,7 +4,7 @@ from math import factorial as fac
 from tasks.utils import is_natural_number
 
 
-def task555(num: int) -> list:
+def task_555(num: int) -> list:
     """ Build pascal's triangle
     with n floors
     """

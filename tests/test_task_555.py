@@ -46,10 +46,10 @@ class Task555Tests(TestCase):
 
     def test_task_555_valid_zero(self):
         """Test for argument 0"""
-        actual = task_555(0)
-        self.assertEqual([], actual)
+        with self.assertRaises(AssertionError):
+            task_555(0)
 
     def test_pascal_negative(self):
         """Test for negative argument"""
-        actual = task_555(-1)
-        self.assertEqual([], actual)
+        with self.assertRaises(AssertionError):
+            task_555(-1)

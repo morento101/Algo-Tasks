@@ -3,7 +3,7 @@
 from tasks.utils import is_natural_number
 
 
-def task178g(num: int, arr: list) -> int:
+def task_178g(num: int, arr: list) -> int:
     """ Return number that satisfy a following condition:
     l[elem] < (l[elem + 1] + l[elem - 1]) / 2:
     """
