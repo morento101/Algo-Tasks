@@ -11,12 +11,12 @@ class TestTask88a(TestCase):
 
     def test_with_zero_argument(self):
         """Test with 0 as function argument."""
-        with self.assertRaises(AssertionError) as test_exception:
+        with self.assertRaises(AssertionError):
             task_88a(0)
 
     def test_with_negative_argument(self):
         """Test with negative number as function argument."""
-        with self.assertRaises(AssertionError) as test_exception:
+        with self.assertRaises(AssertionError):
             task_88a(-1)
 
     def test_negative_result(self):

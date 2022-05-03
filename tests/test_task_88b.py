@@ -11,12 +11,12 @@ class TestReverseNumber(TestCase):
 
     def test_with_zero_argument(self):
         """Test with 0 as function argument."""
-        with self.assertRaises(AssertionError) as test_exception:
+        with self.assertRaises(AssertionError):
             task_88b(0)
 
     def test_with_negative_argument(self):
         """Test with negative number as function argument."""
-        with self.assertRaises(AssertionError) as test_exception:
+        with self.assertRaises(AssertionError):
             task_88b(-1)
 
     def test_negative_result(self):
