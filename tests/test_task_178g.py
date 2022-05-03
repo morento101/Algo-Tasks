@@ -11,19 +11,19 @@ class Task178gTests(TestCase):
         """Test with positive numbers"""
         sequence = (23, 4, 6, 11, 6, 93, 56, 43, 12, 88, 55, 3, 100)
         actual = task_178g(len(sequence), sequence)
-        self.assertEqual("task 178(g): 6", actual)
+        self.assertEqual(6, actual)
 
     def test_task_178g_zero(self):
         """Test with one zero in sequence"""
         sequence = (0,)
         actual = task_178g(len(sequence), sequence)
-        self.assertEqual("task 178(g): 0", actual)
+        self.assertEqual(0, actual)
 
     def test_task_178g_empty(self):
         """Test with empty sequence"""
         sequence = ()
-        actual = task_178g(len(sequence), sequence)
-        self.assertEqual("task 178(g): 0", actual)
+        with self.assertRaises(AssertionError):
+            task_178g(len(sequence), sequence)
 
     def test_task_178g_index_error(self):
         """Test with too big index"""
