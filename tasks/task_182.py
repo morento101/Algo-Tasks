@@ -1,6 +1,6 @@
 """This module contains realisation of task 182."""
 
-from utils import (is_natural_number,
+from tasks.utils import (is_natural_number,
                     has_int_in_list)
 
 
