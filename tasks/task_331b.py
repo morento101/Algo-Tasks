@@ -2,7 +2,7 @@
 Return all possible representations
 """
 
-from utils import is_natural_number
+from tasks.utils import is_natural_number
 from math import sqrt, ceil
 
 def square_sum_equals(x: int, y: int, z: int, number: int) -> bool:
