@@ -2,7 +2,7 @@
 
 from unittest import TestCase
 
-from tasks.tasks_323 import task_323
+from tasks.task_323 import task_323
 
 class TestTask323(TestCase):
     """Tests for task 323"""
