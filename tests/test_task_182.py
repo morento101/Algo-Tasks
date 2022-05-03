@@ -2,7 +2,7 @@
 
 from unittest import TestCase
 
-from tasks.tasks_182 import task_182
+from tasks.task_182 import task_182
 
 
 class TestTask182(TestCase):
