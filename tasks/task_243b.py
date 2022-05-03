@@ -1,6 +1,6 @@
 """Implementation of task 243b"""
 
-from task_243a import _is_prime, find_pairs, check_possibility, validate_number
+from tasks.task_243a import _is_prime, find_pairs, check_possibility, validate_number
 
 
 def check_pair(number: int) -> dict:
