@@ -71,7 +71,8 @@ def main(data_dict: dict):
 
             except (TypeError, AssertionError):
                 print("-" * 60)
-                print(f"The type or number of arguments is not suitable for this task. Pleas try again.")
+                print(f"The type or number of arguments is not suitable"
+                      f" for this task. Pleas try again.")
                 continue
 
 
