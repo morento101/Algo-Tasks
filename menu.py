@@ -22,7 +22,12 @@ def main(data_dict: dict):
         # Print available tasks
         print("*" * 24, "MAIN MENU", "*" * 25)
         print("Available tasks: ")
-        print(", ".join([i for i in tasks_dict if i.startswith("task_")]))
+        for key, value in enumerate(tasks_dict):
+            if value.startswith("task_"):
+                print(value, end=", ")
+                if not key % 5:
+                    print()
+        print("\n")
         print("*" * 60)
 
         try:
