@@ -62,7 +62,7 @@ def main(data_dict: dict):
                     args = [int(arg) for arg in user_input.split(" ")
                             if (arg.isnumeric() and (int(arg) > 0))]
                     # Validate number of parameters
-                    assert(expected_args_count == len(args))
+                    # assert(expected_args_count == len(args))
 
                     print("-" * 60)
 
