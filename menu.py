@@ -26,13 +26,13 @@ def main(data_dict: dict):
         print("*" * 60)
 
         try:
-            task_number = f"task_{input('Input task`s number: ')}"
+            task_number = input("Input task`s number: ")
             # Exit from main loop
-            if task_number == "task_exit":
+            if task_number == "exit":
                 break
 
             # Get the module by input
-            func = tasks_dict[task_number]
+            func = tasks_dict[f"task_{task_number}"]
 
         except KeyError as ex:
             print(f"Input correct task`s number, task {ex} does not exist: ")
@@ -71,7 +71,8 @@ def main(data_dict: dict):
 
             except (TypeError, AssertionError):
                 print("-" * 60)
-                print(f"The type or number of arguments is not suitable for this task. Pleas try again.")
+                print(f"The type or number of arguments is not suitable"
+                      f" for this task. Pleas try again.")
                 continue
 
 
