@@ -23,3 +23,6 @@ def task_554(number: int) -> List[tuple]:
                     res.append((a, b, int(c**.5)))
 
     return res
+
+
+task_554.info = __doc__

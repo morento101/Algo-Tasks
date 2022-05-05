@@ -10,3 +10,6 @@ def task_88v(number: int) -> int:
 
     return int(number) if len(number) == 1 else\
         int(number[-1] + number[1:-1] + number[0])
+
+
+task_88v.info = __doc__

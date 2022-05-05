@@ -1,4 +1,5 @@
 """Menu implementation"""
+
 import re
 from inspect import signature
 
@@ -60,7 +61,7 @@ def main(data_dict: dict):
                 if expected_args_count < 1:
                     # Show module info & call function without arguments
                     print("-" * 60)
-                    print(func.__doc__.replace("    ", ""))
+                    print(func.info.replace("    ", ""))
                     print("-" * 60)
                     print("Result: ", func())
                     break
@@ -68,7 +69,7 @@ def main(data_dict: dict):
                     # Show module info & get arguments (or "exit" key)
                     print("-" * 60)
                     print("Type 'return' to return to the main menu")
-                    user_input = input(pretify_doc(func.__doc__.replace("    ", "")))
+                    user_input = input(pretify_doc(func.info.replace("    ", "")))
                     # Exit from task loop
                     if user_input == "return":
                         break

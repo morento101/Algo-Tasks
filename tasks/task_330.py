@@ -42,6 +42,9 @@ def task_330(number: int) -> list[int]:
     return result
 
 
+task_330.info = __doc__
+
+
 if __name__ == "__main__":
     NUMBER = 100000000000
     start = time()
