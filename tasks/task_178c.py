@@ -17,3 +17,5 @@ def task_178c(*numbers: tuple[int]) -> int:
             count += 1
 
     return count
+
+task_178c.info = __doc__

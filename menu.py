@@ -1,4 +1,5 @@
 """Menu implementation"""
+
 import re
 from inspect import signature
 
