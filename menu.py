@@ -8,6 +8,15 @@ from tasks.tasks import *
 data_dict = locals()
 
 
+def pretify_doc(doc: str) -> str:
+    """
+    This makes code beautiful
+    """
+    if doc[-1] == '\n':
+        return doc
+    return doc + '\n'
+
+
 def main(data_dict: dict):
     """
     Menu implementation
@@ -59,7 +68,7 @@ def main(data_dict: dict):
                     # Show module info & get arguments (or "exit" key)
                     print("-" * 60)
                     print("Type 'return' to return to the main menu")
-                    user_input = input(func.__doc__.replace("    ", ""))
+                    user_input = input(pretify_doc(func.__doc__.replace("    ", "")))
                     # Exit from task loop
                     if user_input == "return":
                         break
