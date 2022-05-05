@@ -1,4 +1,5 @@
-"""108 Given a natural number, find the smallest possible number which matches 
+"""Task 108, given a natural number.
+Find the smallest possible number which matches 
 pattern 2**r and is bigger than the given number
 """
 
@@ -15,3 +16,5 @@ def task_108(number: int) -> int:
         if 2**r > number:
             return 2**r
         r += 1
+
+task_108.info = __doc__

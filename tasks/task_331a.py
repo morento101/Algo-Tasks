@@ -1,4 +1,5 @@
-"""331 Given a natural number, represent it in the sum of three squares.
+"""Task 331, given a natural number. 
+Represent it in the sum of three squares.
 Return 1 representation, if possible.
 """
 
@@ -23,3 +24,5 @@ def task_331a(number: int) -> list[tuple]:
                 if square_sum_equals(x, y, z, number):
                     result.append((x, y, z))
                     return result
+
+task_331a.info = __doc__
