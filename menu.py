@@ -7,10 +7,15 @@ from tasks.tasks import *
 
 data_dict = locals()
 
+
 def pretify_doc(doc: str) -> str:
+    """
+    This makes code beautiful
+    """
     if doc[-1] == '\n':
         return doc
     return doc + '\n'
+
 
 def main(data_dict: dict):
     """
