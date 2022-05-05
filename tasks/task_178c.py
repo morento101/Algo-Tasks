@@ -2,14 +2,11 @@
 Count numbers which are squares of multiples of two.
 """
 
-from typing import Sequence
 
-
-def task_178c(numbers: Sequence[int]) -> int:
+def task_178c(*numbers: tuple[int]) -> int:
     """Returns count of numbers from sequence which are
     squares of multiples of two
     """
-    assert isinstance(numbers, (tuple, set, list)), "Sequence must be tuple, set or list"
     count = 0
 
     for number in numbers:
