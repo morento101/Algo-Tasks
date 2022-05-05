@@ -22,7 +22,8 @@ class Task178dTests(TestCase):
     def test_task_178d_empty(self):
         """Test with empty sequence"""
         sequence = ()
-        print(task_178d(*sequence))
+        with self.assertRaises(AssertionError):
+            task_178d(*sequence)
 
     def test_task_178d_negative(self):
         """Test with negative numbers"""
