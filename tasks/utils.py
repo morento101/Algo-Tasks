@@ -7,7 +7,7 @@ def is_natural_number(number: int) -> bool:
 
 def has_int_in_list(array: list[int]) -> bool:
     """Returns True if the list has integer elements."""
-    tmp: bool
+    tmp = False
     for i in array:
         if not isinstance(i, int):
             return False
