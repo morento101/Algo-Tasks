@@ -13,7 +13,7 @@ class TestTask178b(TestCase):
         """Test that task_178c function returns correct result."""
         entry_sequence = (16, 9, 1, 14, 7, 22, 25, 121, 1, 0, 100)
         expected_answer = 3
-        answer = task_178c(entry_sequence)
+        answer = task_178c(*entry_sequence)
         self.assertEqual(expected_answer, answer)
 
     def test_task178c_negative(self):
@@ -29,7 +29,7 @@ class TestTask178b(TestCase):
         """Test when there are no args result is zero."""
         entry_sequence = []
         expected_answer = 0
-        answer = task_178c(entry_sequence)
+        answer = task_178c(*entry_sequence)
         self.assertEqual(expected_answer, answer)
 
     def test_task178c_valid_str(self):

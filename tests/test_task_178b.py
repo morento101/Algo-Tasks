@@ -13,14 +13,14 @@ class TestTask178b(TestCase):
         """Test that task_178 function returns correct result."""
         entry_sequence = (711, 3, 5, 1, 15, 10, 8, 9, 0)
         expected_answer = 3
-        answer = task_178b(entry_sequence)
+        answer = task_178b(*entry_sequence)
         self.assertEqual(expected_answer, answer)
  
     def test_task178b_valid_empty(self):
         """Test when one of args is zero result is zero."""
         entry_sequence = []
         expected_answer = 0
-        answer = task_178b(entry_sequence)
+        answer = task_178b(*entry_sequence)
         self.assertEqual(expected_answer, answer)
 
     def test_task178b_valid_str(self):
