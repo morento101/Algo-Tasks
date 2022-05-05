@@ -9,3 +9,6 @@ def task_88g(number: int) -> int:
     number = str(number)
 
     return int("1" + number + "1")
+
+
+task_88g.info = __doc__
