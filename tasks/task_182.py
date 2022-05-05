@@ -1,7 +1,9 @@
-"""This module contains realisation of task 182."""
+"""Task 182. Given array of integers. Find the amount and sum 
+of those terms in a given sequence 
+that are divisible by 5 and not divisible by 7.
+"""
 
-from tasks.utils import (is_natural_number,
-                    has_int_in_list)
+from tasks.utils import has_int_in_list
 
 
 def task_182(*args: list) -> tuple:
@@ -19,3 +21,5 @@ def task_182(*args: list) -> tuple:
             sum_res += args[i]
 
     return amount, sum_res
+
+task_182.info = __doc__

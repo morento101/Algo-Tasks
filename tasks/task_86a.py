@@ -9,6 +9,8 @@ def task_86a(number: int) -> int:
     return len(str(number))
 
 
+task_86a.info = __doc__
+
 if __name__ == "__main__":
     NUMBER = 13456
     print(task_86a(NUMBER))
