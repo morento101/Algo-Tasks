@@ -5,7 +5,7 @@ from tasks.utils import is_natural_number
 
 
 def task_555(num: int) -> list:
-    """ Build pascal's triangle
+    """Build pascal's triangle
     with n floors
     """
     assert is_natural_number(num), "The number should be natural"
