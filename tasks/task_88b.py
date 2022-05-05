@@ -1,4 +1,6 @@
-"""This module contains realisation of task 88b."""
+"""Task 88b, given natural number. 
+Prints reverse number.
+"""
 
 from tasks.utils import is_natural_number
 
@@ -15,3 +17,6 @@ def task_88b(number: int) -> int:
     Returns reversed number
     """
     return reverse_number(number)
+
+
+task_88b.info = __doc__

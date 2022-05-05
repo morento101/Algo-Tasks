@@ -1,4 +1,6 @@
-"""This module contains realisation of task 322."""
+"""Task 322, requires no input data. 
+It finds number with largest sum of divisors within range 1, 10000.
+"""
 
 from tasks.utils import is_natural_number
 
@@ -38,3 +40,6 @@ def task_322() -> int:
     end = 10000
 
     return get_number_with_largest_sum_of_divisors(start, end)
+
+
+task_322.info = __doc__
