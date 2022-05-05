@@ -1,4 +1,7 @@
-"""Module with task 178d"""
+"""Task 178d, given sequece of numbers.
+Count numbers, which satisfy a following condition:
+2**k< ak < k!
+"""
 
 from math import factorial as fac
 from tasks.utils import has_int_in_list
@@ -15,3 +18,6 @@ def task_178d(*arr: tuple) -> int:
         if arr[elem] > 2**elem and arr[elem] < fac(elem):
             count += 1
     return count
+
+
+task_178d.info = __doc__
