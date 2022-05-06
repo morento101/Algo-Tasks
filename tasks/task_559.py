@@ -41,3 +41,6 @@ def task_559(limit: int) -> list[int]:
         else:
             result.append(mersenne_candidate)
     return result
+
+
+task_559.info = __doc__
