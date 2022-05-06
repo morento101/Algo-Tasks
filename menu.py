@@ -60,7 +60,7 @@ def print_result(result) -> None:
     Print answer of the function
     """
     if not result:
-        print("Result: False")
+        print("Result: -")
     elif isinstance(result, int):
         print("Result:", result)
     else:
@@ -103,7 +103,7 @@ def main(data_dict: dict):
 
             except KeyError as ex:
                 if user_input:
-                    print(f"Input correct task`s number, task {ex} does not exist: ")
+                    print(f"Input correct task number, task {ex} does not exist: ")
                 continue
 
         while True:
@@ -118,8 +118,8 @@ def main(data_dict: dict):
             else:
                 while True:
                     print_task_desc(func)
-                    print("Print the arguments to get the answer. 'return'")
-                    print("or 'r' will bring you back to the menu.")
+                    print("Enter the arguments to get the answer. Type")
+                    print("'return' or 'r' to get back to the menu.")
                     print("Or type 'exit' or 'e' to terminate app.\n")
 
                     while True:
@@ -137,7 +137,7 @@ def main(data_dict: dict):
                         except (TypeError, AssertionError):
                             if user_input:
                                 print(f"The type or number of arguments is not suitable"
-                                f" for this task. Pleas try again.")
+                                f" for this task. Please, try again.")
                             continue
 
                         finally:
