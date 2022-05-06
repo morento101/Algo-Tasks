@@ -16,3 +16,5 @@ def task_107(number: int) -> int:
 
     assert validate_number(number), "Wrong argument, must be natural integer"
     return int(log(number-1, 4))
+
+task_107.info = __doc__

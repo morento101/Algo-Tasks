@@ -42,3 +42,5 @@ def task_243a(number: int) -> dict:
         return find_pairs(number, True)
     else:
         return {}
+
+task_243a.info = __doc__

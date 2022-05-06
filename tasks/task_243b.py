@@ -28,3 +28,6 @@ def task_243b(number: int) -> list:
         return result_lst
     else:
         return []
+
+
+task_243b.info = __doc__
