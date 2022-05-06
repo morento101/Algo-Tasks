@@ -1,15 +1,16 @@
-"""This module provides function to get digits sum in the number."""
+"""86b. Given a natural number n. Find digits sum in the number n."""
+
+from tasks.utils import is_natural_number
 
 
 # task 86b
 def task_86b(number: int) -> int:
-    """
-    Get digits sum in the number.
-    """
-    if not isinstance(number, int):
-        raise TypeError("Argument should be integer!")
+    """Get digits sum in the number."""
+    assert is_natural_number(number), "The number should be natural"
     return sum([int(num) for num in str(number)])
 
+
+task_86b.info = __doc__
 
 if __name__ == "__main__":
     NUMBER = 13456

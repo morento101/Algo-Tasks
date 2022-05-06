@@ -1,14 +1,15 @@
-"""This module provides function to get digits length in the number."""
+"""86a. Given a natural number n. Find digits length in the number n."""
+
+from tasks.utils import is_natural_number
 
 
 def task_86a(number: int) -> int:
-    """
-    Get digits length in the number.
-    """
-    if not isinstance(number, int):
-        raise TypeError("Argument should be integer!")
+    """Get digits length in the number."""
+    assert is_natural_number(number), "The number should be natural"
     return len(str(number))
 
+
+task_86a.info = __doc__
 
 if __name__ == "__main__":
     NUMBER = 13456
