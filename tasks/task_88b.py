@@ -1,4 +1,4 @@
-"""Task 88b, given natural number. 
+"""Task 88b, given natural number.
 Prints reverse number.
 """
 
