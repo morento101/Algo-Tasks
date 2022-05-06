@@ -6,7 +6,7 @@ that are divisible by 5 and not divisible by 7.
 from tasks.utils import has_int_in_list
 
 
-def task_182(*args: list) -> tuple:
+def task_182(*args: tuple) -> tuple:
     """Returns amount and sum of elements
     which are divisible by 5 and not divisible by 7.
     """
