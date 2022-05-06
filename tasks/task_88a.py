@@ -1,4 +1,4 @@
-"""Task 88b, given natural number.
+"""Task 88a, given natural number.
 Prints True if 3 is in square of given number.
 """
 
