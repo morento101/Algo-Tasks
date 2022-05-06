@@ -1,7 +1,7 @@
 """Menu implementation"""
 
-import re
 from inspect import signature
+from sys import exit
 
 from tasks.tasks import *
 
@@ -44,7 +44,7 @@ def main(data_dict: dict):
             task_number = input("Input task`s number: ")
             # Exit from main loop
             if task_number == "exit":
-                break
+                exit()
 
             # Get the module by input
             func = tasks_dict[f"task_{task_number}"]
@@ -72,8 +72,12 @@ def main(data_dict: dict):
                     user_input = input(pretify_doc(
                         func.info.replace("    ", "")))
                     # Exit from task loop
+
                     if user_input == "return":
                         break
+                    
+                    if user_input == "exit":
+                        exit()
                     # Get arguments (you validation function could be here)
                     args = [int(arg) for arg in user_input.split(" ")
                             if (arg.isnumeric() and (int(arg) > 0))]
