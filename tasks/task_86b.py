@@ -10,6 +10,8 @@ def task_86b(number: int) -> int:
     return sum([int(num) for num in str(number)])
 
 
+task_86b.info = __doc__
+
 if __name__ == "__main__":
     NUMBER = 13456
     print(task_86b(NUMBER))

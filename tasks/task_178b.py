@@ -2,14 +2,13 @@
 Count numbers, which are multiples of three but not multiples of five
 """
 
-from typing import Sequence
 
-
-def task_178b(numbers: Sequence[int]) -> int:
+def task_178b(*numbers: tuple[int]) -> int:
     """Return amount of numbers from sequence which are 
     multiples of three but not multiples of five
     """
-    assert isinstance(numbers, (tuple, set, list)), "Sequence must be tuple, set or list"
+    assert numbers, "Type valid sequence of numbers"
+
     count = 0
 
     for number in numbers:
@@ -18,3 +17,6 @@ def task_178b(numbers: Sequence[int]) -> int:
             count += 1
 
     return count
+
+
+task_178b.info = __doc__

@@ -14,3 +14,6 @@ def task_87(target: int, tail_size: int) -> int:
         # Return the sum of the right digit and the result of the recursion for the other digits of the number
         tail_size -= 1
         return target % 10 + task_87(target // 10, tail_size)
+
+
+task_87.info = __doc__

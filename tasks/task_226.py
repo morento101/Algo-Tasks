@@ -16,3 +16,6 @@ def task_226(first_arg: int, second_arg: int) -> list[int]:
             result.append(suspect)
         suspect += second_arg
     return result
+
+
+task_226.info = __doc__

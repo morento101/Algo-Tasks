@@ -1,4 +1,6 @@
-"""This module contains realisation of task 88a."""
+"""Task 88b, given natural number.
+Prints True if 3 is in square of given number.
+"""
 
 from tasks.utils import is_natural_number
 
@@ -15,3 +17,6 @@ def task_88a(number: int) -> bool:
     Returns true if square of number contains 3
     """
     return is_3_in_square_of_number(number)
+
+
+task_88a.info = __doc__
