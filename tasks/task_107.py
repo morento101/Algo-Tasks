@@ -1,4 +1,6 @@
-"""Implementation of task 107"""
+"""Task 107, give a number. 
+Find max k, which match the expression 4^k < number.
+"""
 from math import log
 
 
@@ -12,7 +14,7 @@ def validate_number(number: int) -> bool:
 
 
 def task_107(number: int) -> int:
-    """Find max k, which match the expression 4^k < number"""
+    """Returns max k, which match the expression 4^k < number"""
 
     assert validate_number(number), "Wrong argument, must be natural integer"
     return int(log(number-1, 4))
