@@ -20,8 +20,8 @@ class TestTask178b(TestCase):
         """Test when one of args is zero result is zero."""
         entry_sequence = []
         expected_answer = 0
-        answer = task_178b(*entry_sequence)
-        self.assertEqual(expected_answer, answer)
+        with self.assertRaises(AssertionError):
+            task_178b(entry_sequence)
 
     def test_task178b_valid_str(self):
         """Test when one of args is incorrect data type an 
