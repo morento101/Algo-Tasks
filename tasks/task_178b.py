@@ -7,6 +7,8 @@ def task_178b(*numbers: tuple[int]) -> int:
     """Return amount of numbers from sequence which are 
     multiples of three but not multiples of five
     """
+    assert numbers, "Type valid sequence of numbers"
+
     count = 0
 
     for number in numbers:

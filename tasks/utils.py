@@ -14,18 +14,4 @@ def has_int_in_list(array: list[int]) -> bool:
         tmp = True
 
     return tmp
-
-
-def decorator(info):
-    def decorator(func):
-        class Wrapper:
-            def __init__(self, func, info):
-                self._func = func
-                self._info = info
-
-            def __call__(self):
-                return self._func()
-
-        return Wrapper(func, info)
-    return decorator 
   
