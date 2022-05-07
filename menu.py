@@ -61,8 +61,6 @@ def print_result(result) -> None:
     """
     if not result:
         print("Result: -")
-    elif isinstance(result, int):
-        print("Result:", result)
     else:
         print("Result:", *result)
 
