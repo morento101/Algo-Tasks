@@ -3,6 +3,7 @@
 from inspect import signature
 from sys import exit
 from os import system
+from textwrap import TextWrapper
 
 from tasks.tasks import *
 
@@ -15,6 +16,7 @@ logo_str = "     __   __     ___   __   ____   __   ____  __ _  ____ \n" + \
            "   /    \/ (_/\( (_ \(  O )  )(  /    \\\\___ \ )  ( \___ \\\n" + \
            "   \_/\_/\____/ \___/ \__/  (__) \_/\_/(____/(__\_)(____/"
 
+text_wrapper = TextWrapper()
 
 def pretify_func_name(func_name: str) -> str:
     """
@@ -62,7 +64,14 @@ def print_result(result) -> None:
     if not result:
         print("Result: -")
     else:
-        print("Result:", *result)
+        result = str(result)
+        if (len(result) > 80):
+            result = text_wrapper(result)
+            print("Result: ")
+            for line in result:
+                print(line)
+        else:
+            print("Result:", *result)
 
 
 def print_menu(data_dict: dict) -> None:
