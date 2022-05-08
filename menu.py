@@ -1,4 +1,29 @@
-"""Menu implementation"""
+#############################################################################
+#     __   __     ___   __   ____   __   ____  __ _  ____
+#    / _\ (  )   / __) /  \ (_  _) / _\ / ___)(  / )/ ___)
+#   /    \/ (_/\( (_ \(  O )  )(  /    \\___ \ )  ( \___ \
+#   \_/\_/\____/ \___/ \__/  (__) \_/\_/(____/(__\_)(____/
+#############################################################################
+#
+#   This is a menu implementation for the algorythmic tasks
+#   that were made as a colaboration of the following people:
+#
+#   - Mykhailo Polishchuk       https://github.com/Misha86
+#   - Volodymyr Keretiv         https://github.com/therobotisnotatoy
+#   - Serhii Voloshyn           https://github.com/Serhii-Voloshyn
+#   - Oleksii Datsiuk           https://github.com/OleksiiDatsiuk
+#   - Ira Shevchenko            https://github.com/shevchenkoira
+#   - Dmytro Tymoshchenko       https://github.com/pazuzu-ua
+#   - Yaroslav Kovaliv          https://github.com/morento101
+#   - Yaroslav Borysko          https://github.com/YaroslavBorysko
+#   - Volodymyr Shyra           https://github.com/shv833
+#
+#   All the task implementations live in the 'tasks' folder
+#   under their names. All the tests can be found in the
+#   'tests' folder. Tests can be run by executing file
+#   'run_tests.py' in the current folder.
+#
+#############################################################################
 
 from inspect import signature
 from sys import exit
@@ -16,18 +41,19 @@ logo_str = "     __   __     ___   __   ____   __   ____  __ _  ____ \n" + \
            "   /    \/ (_/\( (_ \(  O )  )(  /    \\\\___ \ )  ( \___ \\\n" + \
            "   \_/\_/\____/ \___/ \__/  (__) \_/\_/(____/(__\_)(____/"
 
-text_wrapper = TextWrapper()
+text_wrapper = TextWrapper(break_long_words=False)
+
 
 def pretify_func_name(func_name: str) -> str:
     """
-    Make name of the function prettier
+    Make function names in the task list prettier
     """
     return func_name[5:]
 
 
 def pretify_doc(doc: str) -> str:
     """
-    Make description of the function prettier
+    Make task description in the menu prettier
     """
     if doc[-1] == '\n':
         return doc.replace("    ", "")
@@ -36,14 +62,14 @@ def pretify_doc(doc: str) -> str:
 
 def clear_screen() -> None:
     """
-    Clear screen from symbols
+    Clear the scree from the previous output
     """
     system('cls||clear')
 
 
 def print_logo() -> None:
     """
-    Print app logo
+    Print the logo for the main menu
     """
     print(logo_str)
     print("*" * 60)
@@ -59,24 +85,24 @@ def print_task_desc(func) -> None:
 
 def print_result(result) -> None:
     """
-    Print answer of the function
+    Print result of the function
     """
     if not result:
-        print("Result: -")
+        print("Result: False/No result")
     else:
         result = str(result)
-        if (len(result) > 80):
-            result = text_wrapper(result)
+        if (len(result) > 60):
+            result = text_wrapper.wrap(result)
             print("Result: ")
             for line in result:
                 print(line)
         else:
-            print("Result:", *result)
+            print("Result:", result)
 
 
 def print_menu(data_dict: dict) -> None:
     """
-    Print the main menu with logo
+    Print the main menu with a logo
     """
     print_logo()
     print("Choose one of the available tasks:")
@@ -85,7 +111,6 @@ def print_menu(data_dict: dict) -> None:
         if not key % 7:
             print()
     print("\nOr type 'exit' or 'e' to terminate app.")
-
 
 
 def main(data_dict: dict):
@@ -110,7 +135,8 @@ def main(data_dict: dict):
 
             except KeyError as ex:
                 if user_input:
-                    print(f"Input correct task number, task {ex} does not exist: ")
+                    print(
+                        f"Input correct task number, task {ex} does not exist: ")
                 continue
 
         while True:
@@ -136,7 +162,6 @@ def main(data_dict: dict):
                             if user_input == "exit" or user_input == "e":
                                 exit()
 
-
                             args = [int(arg) for arg in user_input.split(" ")
                                     if (arg.isnumeric() and (int(arg) > 0))]
                             print_result(func(*args))
@@ -144,7 +169,7 @@ def main(data_dict: dict):
                         except (TypeError, AssertionError):
                             if user_input:
                                 print(f"The type or number of arguments is not suitable"
-                                f" for this task. Please, try again.")
+                                      f" for this task. Please, try again.")
                             continue
 
                         finally:
