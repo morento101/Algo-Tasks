@@ -1,5 +1,4 @@
-"""330.
-
+"""Task 330, given perfect natural number.
 A natural number is call to be perfect if it is equal
 to the sum of all its divisors except itself
 The number 6 is perfect, since 6 = 1 + 2 + 3.
