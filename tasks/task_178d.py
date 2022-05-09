@@ -1,6 +1,6 @@
-"""Task 178d, given sequece of numbers.
-Count numbers, which satisfy a following condition:
-2**k< ak < k!
+"""178d. Given a sequece of numbers,
+count numbers, which satisfy a following condition:
+2**k < ak < k!
 """
 
 from math import factorial as fac
@@ -8,7 +8,7 @@ from tasks.utils import has_int_in_list
 
 
 def task_178d(*arr: tuple) -> int:
-    """ Return number that satisfy a following condition:
+    """Return number that satisfy a following condition:
     2**k< ak < k!
     """
     assert has_int_in_list(arr), "The number should be natural"

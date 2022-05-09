@@ -1,4 +1,7 @@
-"""Find max k, which match the expression 4^k < number. Enter natural number"""
+"""107. Given a natural number n,
+find max k, which match the expression 4^k < number.
+"""
+
 from math import log
 
 

@@ -1,4 +1,4 @@
-"""Task 554, given number n.
+"""554. Given a number n.
 Return all pythagorean triples where a <= b <= c <= n.
 """
 
@@ -6,7 +6,7 @@ from typing import List
 
 
 def task_554(number: int) -> List[tuple]:
-    """Returns list of tuples with all pythagorean triples which satisfy
+    """Return list of tuples with all pythagorean triples which satisfy
     following equations: a^2 + b^2 = c^2 and a <= b <= c <= n
     """
     assert isinstance(number, int), "Number can be only int type"

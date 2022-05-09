@@ -1,4 +1,6 @@
-"""87. Given a natural n, m. Get the sum of m last digits of the number n."""
+"""87. Given natural numbers n and m, 
+get the sum of last m digits of the number n.
+"""
 
 from tasks.utils import is_natural_number
 

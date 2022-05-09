@@ -1,6 +1,6 @@
-"""Find all pairs(x,y), which match the expression
-   x^2 + y^2 = number, where x > y.
-   Enter natural number
+"""243b. Given a natural number n,
+find all pairs(x,y), which match the expression
+x^2 + y^2 = number, where x > y.
 """
 
 from tasks.task_243a import _is_prime, find_pairs, check_possibility, validate_number
