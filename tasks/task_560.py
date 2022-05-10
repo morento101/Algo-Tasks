@@ -1,11 +1,10 @@
-"""Task 560. Two natural numbers are called friendly
-if each of them is equal to the sum of all divisors of the other,
-except for this number itself.
-Find all pairs of friendly numbers between 200 and 300.
+"""560. Find all pairs of friendly numbers between 200 and 300.
+Two natural numbers are called friendly if each of them is equal 
+to the sum of all divisors of the other, except for this number itself.
 """
 
 def task_560() -> list:
-    """Returns all pairs of friendly numbers between 200 and 300."""
+    """Return all pairs of friendly numbers between 200 and 300."""
     tmp = 0
     array = []
     for k in range(200, 301):

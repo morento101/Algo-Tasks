@@ -1,10 +1,10 @@
-"""Task 178c, given sequence of numbers. 
-Count numbers which are squares of multiples of two.
+"""178c. Given a sequence of numbers, 
+count those numbers, which are squares of multiples of two.
 """
 
 
 def task_178c(*numbers: tuple[int]) -> int:
-    """Returns count of numbers from sequence which are
+    """Return count of numbers from sequence which are
     squares of multiples of two
     """
     assert numbers, "Type valid sequence of numbers"

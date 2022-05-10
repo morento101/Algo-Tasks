@@ -1,6 +1,6 @@
-"""Task 331, given a natural number. 
-Represent it in the sum of three squares.
-Return all possible representations.
+"""331b. Given a natural number n, 
+represent it as the sum of three squares.
+Return a list of all possible representations.
 """
 
 from tasks.utils import is_natural_number

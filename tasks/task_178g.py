@@ -1,5 +1,5 @@
-"""Task 178g, given sequece of numbers.
-Count numbers, which satisfy a following condition:
+"""178g. Given a sequece of numbers,
+count numbers, which satisfy a following condition:
 l[elem] < (l[elem + 1] + l[elem - 1]) / 2
 """
 
@@ -7,7 +7,7 @@ from tasks.utils import has_int_in_list
 
 
 def task_178g(*arr: tuple) -> int:
-    """ Return number that satisfy a following condition:
+    """Return number that satisfy a following condition:
     l[elem] < (l[elem + 1] + l[elem - 1]) / 2:
     """
     assert has_int_in_list(arr), "The number should be natural"

@@ -1,4 +1,6 @@
-"""Task 555, build pascal's triangle with n floors"""
+"""555. Given a natural number n,
+build Pascal's triangle with n floors
+"""
 
 from math import factorial as fac
 from tasks.utils import is_natural_number

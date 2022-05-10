@@ -1,4 +1,4 @@
-"""86b. Given a natural number n. Find digits sum in the number n."""
+"""86b. Given a natural number n. Find digits sum of the number n."""
 
 from tasks.utils import is_natural_number
 

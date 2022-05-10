@@ -1,13 +1,13 @@
-"""Task 182. Given array of integers. Find the amount and sum 
-of those terms in a given sequence 
-that are divisible by 5 and not divisible by 7.
+"""182. Given an array of integers, 
+Find the amount and a sum of those items of a given sequence 
+that are both divisible by 5 and not divisible by 7.
 """
 
 from tasks.utils import has_int_in_list
 
 
 def task_182(*args: tuple) -> tuple:
-    """Returns amount and sum of elements
+    """Return amount and sum of elements
     which are divisible by 5 and not divisible by 7.
     """
     assert has_int_in_list(args), "The list should have integer elements"
