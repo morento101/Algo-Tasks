@@ -11,8 +11,8 @@ class TestTask331a(TestCase):
 
     def test_valid(self):
         """This method is for testing the correct result"""
-        self.assertEqual(task_331a(21), [(1, 2, 4)])
-        self.assertEqual(task_331a(67), [(3, 3, 7)])
+        self.assertEqual(task_331a(21), (1, 2, 4))
+        self.assertEqual(task_331a(67), (3, 3, 7))
 
     def test_with_negative_argument(self):
         """Test with negative number as function argument"""
@@ -30,7 +30,7 @@ class TestTask331a(TestCase):
 
     def test_with_empty_results(self):
         """Test with empty results"""
-        self.assertEqual(task_331a(1), None)
+        self.assertEqual(task_331a(1), False)
 
 
 if __name__ == "__main__":
