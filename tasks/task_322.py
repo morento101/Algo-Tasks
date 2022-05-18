@@ -37,7 +37,7 @@ def task_322() -> int:
     # Set boundaries
     START = 1
     END = 10000
-    return get_number_with_largest_sum_of_divisors(start, end)
+    return get_number_with_largest_sum_of_divisors(START, END)
 
 
 task_322.info = __doc__
