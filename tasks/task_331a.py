@@ -11,6 +11,7 @@ def square_sum_equals(x: int, y: int, z: int, number: int) -> bool:
     """Return True if x^2 + y^2 + z^2 == number"""
     return x ** 2 + y ** 2 + z ** 2 == number
 
+
 def task_331a(number: int) -> list[tuple]:
     """Return a representation of a *num* as a sum of
         three squared numbers, if possible. Or return
@@ -24,5 +25,6 @@ def task_331a(number: int) -> list[tuple]:
                 if square_sum_equals(x, y, z, number):
                     return (x, y, z)
     return False
+
 
 task_331a.info = __doc__

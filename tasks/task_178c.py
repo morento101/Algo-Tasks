@@ -13,11 +13,13 @@ def task_178c(*numbers: tuple[int]) -> int:
 
     for number in numbers:
         assert isinstance(number, int), "Numbers in sequene must be int"
-        assert number >= 0, f"Can't calculate square root from negative number {number}"
+        assert number >= 0, f"Can't calculate square root from negative " \
+                            f"number {number}"
         number_root = number ** .5
         if not (number_root % 1) and not (number_root % 2):
             count += 1
 
     return count
+
 
 task_178c.info = __doc__

@@ -22,4 +22,5 @@ def task_182(*args: tuple) -> tuple:
 
     return amount, sum_res
 
+
 task_182.info = __doc__

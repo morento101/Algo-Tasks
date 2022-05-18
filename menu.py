@@ -91,7 +91,7 @@ def print_result(result) -> None:
         print("Result: False/No result")
     else:
         result = str(result)
-        if (len(result) > 60):
+        if len(result) > 60:
             result = text_wrapper.wrap(result)
             print("Result: ")
             for line in result:
@@ -136,7 +136,8 @@ def main(data_dict: dict):
             except KeyError as ex:
                 if user_input:
                     print(
-                        f"Input correct task number, task {ex} does not exist: ")
+                        f"Input correct task number, task {ex} does not "
+                        f"exist: ")
                 continue
 
         while True:
@@ -168,8 +169,9 @@ def main(data_dict: dict):
 
                         except (TypeError, AssertionError):
                             if user_input:
-                                print(f"The type or number of arguments is not suitable"
-                                      f" for this task. Please, try again.")
+                                print(f"The type or number of arguments is "
+                                      f"not suitable for this task. Please, "
+                                      f"try again.")
                             continue
 
                         finally:

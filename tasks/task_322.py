@@ -6,7 +6,9 @@ from tasks.utils import is_natural_number
 
 
 def get_number_with_largest_sum_of_divisors(start: int, end: int) -> int:
-    """Return number with the largest sum of divisors within range (start, end)"""
+    """Return number with the largest sum of divisors within
+    range (start, end)
+    """
     assert is_natural_number(start), "start should be natural numbers"
     assert is_natural_number(end), "end should be natural numbers"
     assert end >= start, "End point should be greater than start"
@@ -27,7 +29,7 @@ def get_divisors_list(number: int) -> list:
     """Return list of number divisors"""
     assert is_natural_number(number), "The number should be natural"
     return [i for i in range(1, int(number/2) + 1) if number % i == 0] + \
-            [number]
+           [number]
 
 
 def task_322() -> int:
