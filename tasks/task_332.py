@@ -1,5 +1,6 @@
-"""332 Given natural number, find four not negative numbers which match
-expression: number = x**2 + y**2 + z**2 + t**2
+"""332 Given a natural number n, 
+find four not negative numbers which match the
+expression: number = x**2 + y**2 + z**2 + t**2.
 """
 
 from tasks.utils import is_natural_number
@@ -19,3 +20,6 @@ def task_332(number: int) -> tuple:
                     if x_val*x_val + y_val*y_val + z_val*z_val + t_val*t_val\
                             == number:
                         return x_val, y_val, z_val, t_val
+
+
+task_332.info = __doc__

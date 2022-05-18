@@ -6,7 +6,7 @@ from tasks.task_330 import task_330
 
 
 class TestTask330(unittest.TestCase):
-    """This class is for testing function task_86b."""
+    """This class is for testing function task_330."""
     
     def test_valid(self):
         """This method is for testing the correct result."""

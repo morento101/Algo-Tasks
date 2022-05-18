@@ -1,10 +1,12 @@
-"""This module contains realisation of task 323."""
+"""323. Given a natural number n, 
+get all natural numbers less than n and relatively prime to it.
+"""
 
 from tasks.utils import is_natural_number
 
 
 def task_323(number: int) -> list:
-    """Returns all natural numbers less than n and coprime with it."""
+    """Return all natural numbers less than n and coprime with it."""
     assert is_natural_number(number), "The number should be natural"
 
     tmp = number - 1
@@ -24,3 +26,5 @@ def task_323(number: int) -> list:
         tmp -= 1
 
     return array
+
+task_323.info = __doc__

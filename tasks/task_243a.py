@@ -1,9 +1,13 @@
-"""Implementation of task 243a"""
+"""243a. Given a natural number n,
+find all pairs(x,y), which match the expression
+x^2 + y^2 = number.
+"""
+
 from tasks.task_107 import validate_number
 
 
 def _is_prime(number: int) -> bool:
-    """Function for checking is number prime"""
+    """Function for checking if number is prime"""
 
     if number == 2 or number == 3:
         return True
@@ -16,7 +20,7 @@ def _is_prime(number: int) -> bool:
 
 
 def check_possibility(number: int) -> bool:
-    """Function for checking possibility solving tasks 243a/b"""
+    """Function for checking possibility of solving tasks 243a/b"""
 
     return number % 4 == 1
 
@@ -35,10 +39,13 @@ def find_pairs(number: int, one_already=False) -> dict:
 
 
 def task_243a(number: int) -> dict:
-    """Find pair(x,y), which match the expression x^2 + y^2 = number"""
+    """Return pair(x,y), which match the expression x^2 + y^2 = number"""
 
     assert validate_number(number), "Wrong argument, must be natural integer"
     if _is_prime(number) and check_possibility(number):
         return find_pairs(number, True)
     else:
         return {}
+
+
+task_243a.info = __doc__

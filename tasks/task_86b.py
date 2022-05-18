@@ -1,4 +1,4 @@
-"""86b. Given a natural number n. Find digits sum in the number n."""
+"""86b. Given a natural number n. Find digits sum of the number n."""
 
 from tasks.utils import is_natural_number
 
@@ -9,6 +9,8 @@ def task_86b(number: int) -> int:
     assert is_natural_number(number), "The number should be natural"
     return sum([int(num) for num in str(number)])
 
+
+task_86b.info = __doc__
 
 if __name__ == "__main__":
     NUMBER = 13456

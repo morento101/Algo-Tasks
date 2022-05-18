@@ -1,7 +1,7 @@
-"""559. Given a natural number n. Find all Mersenne numbers less than n.
-
+"""559. Given a natural number n, 
+find all Mersenne numbers less than n.
 (A prime number is called a Mersenne number if it can
-be represented as 2^p - 1, where p is also a prime number.)
+be represented as 2^p - 1, where p is also a prime number).
 """
 
 from tasks.utils import is_natural_number
@@ -41,3 +41,6 @@ def task_559(limit: int) -> list[int]:
         else:
             result.append(mersenne_candidate)
     return result
+
+
+task_559.info = __doc__
