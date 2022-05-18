@@ -6,7 +6,7 @@ from unittest import main
 from tasks.task_88v import task_88v
 
 
-class TestTask243a(TestCase):
+class TestTask88v(TestCase):
     """Test for function test_88v"""
 
     def test_valid(self):
