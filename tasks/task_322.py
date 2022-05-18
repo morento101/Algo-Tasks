@@ -26,8 +26,8 @@ def get_number_with_largest_sum_of_divisors(start: int, end: int) -> int:
 def get_divisors_list(number: int) -> list:
     """Return list of number divisors"""
     assert is_natural_number(number), "The number should be natural"
-    return [i for i in range(1, int(number/2) + 1) if number % i == 0] \
-            + [number]
+    return [i for i in range(1, int(number/2) + 1) if number % i == 0] + \
+            [number]
 
 
 def task_322() -> int:

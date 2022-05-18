@@ -20,6 +20,13 @@ class TestTask88v(TestCase):
         self.assertEqual("Wrong argument, must be natural integer",
                          test_exception.exception.args[0])
 
+    def test_zero(self):
+        """Test with zero as function argument"""
+        with self.assertRaises(AssertionError) as test_exception:
+            task_88v(0)
+        self.assertEqual("Wrong argument, must be natural integer",
+                         test_exception.exception.args[0])
+
     def test_with_invalid_argument_type(self):
         """Test with wrong argument type"""
         with self.assertRaises(AssertionError) as test_exception:
