@@ -10,10 +10,13 @@ def get_number_with_largest_sum_of_divisors(start: int, end: int) -> int:
     assert is_natural_number(start), "start should be natural numbers"
     assert is_natural_number(end), "end should be natural numbers"
     assert end >= start, "End point should be greater than start"
+    
     # List of all sums of divisors
     sums = [sum(get_divisors_list(number)) for number in range(start, end)]
+    
     # Get the largest sum in list
     max_sum = max(sums)
+    
     # Get number with the largest sum of divisors
     # Works, while a = 1, b => a
     number_with_max_sum = sums.index(max_sum) + 1
@@ -32,8 +35,8 @@ def task_322() -> int:
     Return number with the largest sum of divisors from 1 to 10000
     """
     # Set boundaries
-    start = 1
-    end = 10000
+    START = 1
+    END = 10000
     return get_number_with_largest_sum_of_divisors(start, end)
 
 
