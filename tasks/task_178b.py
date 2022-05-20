@@ -1,5 +1,6 @@
-""""Task 178b, given sequece of numbers.
-Count numbers, which are multiples of three but not multiples of five
+""""178b. Given a sequece of numbers,
+count those numbers, which are multiples of three, 
+but not multiples of five.
 """
 
 

@@ -6,8 +6,8 @@ from unittest import main
 from tasks.task_332 import task_332
 
 
-class TestTask243a(TestCase):
-    """Test for function test_88g"""
+class TestTask332(TestCase):
+    """Test for function test_322"""
 
     def test_valid(self):
         """This method is for testing the correct result"""
@@ -17,6 +17,13 @@ class TestTask243a(TestCase):
         """Test with negative number as function argument"""
         with self.assertRaises(AssertionError) as test_exception:
             task_332(-1)
+        self.assertEqual("Wrong argument, must be natural integer",
+                         test_exception.exception.args[0])
+
+    def test_zero(self):
+        """Test with zero as function argument"""
+        with self.assertRaises(AssertionError) as test_exception:
+            task_332(0)
         self.assertEqual("Wrong argument, must be natural integer",
                          test_exception.exception.args[0])
 

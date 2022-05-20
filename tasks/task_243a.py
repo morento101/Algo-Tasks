@@ -1,12 +1,13 @@
-"""Find all pairs(x,y), which match the expression
-   x^2 + y^2 = number. Enter natural number
+"""243a. Given a natural number n,
+find all pairs(x,y), which match the expression
+x^2 + y^2 = number.
 """
 
 from tasks.task_107 import validate_number
 
 
 def _is_prime(number: int) -> bool:
-    """Function for checking is number prime"""
+    """Function for checking if number is prime"""
 
     if number == 2 or number == 3:
         return True
@@ -19,7 +20,7 @@ def _is_prime(number: int) -> bool:
 
 
 def check_possibility(number: int) -> bool:
-    """Function for checking possibility solving tasks 243a/b"""
+    """Function for checking possibility of solving tasks 243a/b"""
 
     return number % 4 == 1
 
