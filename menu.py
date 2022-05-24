@@ -1,3 +1,5 @@
+"""Algo-tasks menu"""
+
 #############################################################################
 #     __   __     ___   __   ____   __   ____  __ _  ____
 #    / _\ (  )   / __) /  \ (_  _) / _\ / ___)(  / )/ ___)
@@ -36,9 +38,9 @@ from tasks.tasks import *
 data_dict = {key: func for key, func in locals().items()
              if key.startswith("task_")}
 
-logo_str = "     __   __     ___   __   ____   __   ____  __ _  ____ \n" + \
-           "    / _\ (  )   / __) /  \ (_  _) / _\ / ___)(  / )/ ___)\n" + \
-           "   /    \/ (_/\( (_ \(  O )  )(  /    \\\\___ \ )  ( \___ \\\n" + \
+logo_str = "     __   __     ___   __   ____   __   ____  __ _  ____ \n" \
+           "    / _\ (  )   / __) /  \ (_  _) / _\ / ___)(  / )/ ___)\n" \
+           "   /    \/ (_/\( (_ \(  O )  )(  /    \\\\___ \ )  ( \___ \\\n" \
            "   \_/\_/\____/ \___/ \__/  (__) \_/\_/(____/(__\_)(____/"
 
 text_wrapper = TextWrapper(break_long_words=False)
@@ -101,9 +103,7 @@ def print_result(result) -> None:
 
 
 def print_menu(data_dict: dict) -> None:
-    """
-    Print the main menu with a logo
-    """
+    """Print the main menu with a logo"""
     print_logo()
     print("Choose one of the available tasks:")
     for key, value in enumerate(data_dict, 1):
@@ -114,9 +114,7 @@ def print_menu(data_dict: dict) -> None:
 
 
 def main(data_dict: dict):
-    """
-    Main function for menu implementation
-    """
+    """Main function for menu implementation"""
 
     while True:
         clear_screen()
