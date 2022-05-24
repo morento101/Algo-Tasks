@@ -70,25 +70,19 @@ def clear_screen() -> None:
 
 
 def print_logo() -> None:
-    """
-    Print the logo for the main menu
-    """
+    """Print the logo for the main menu."""
     print(logo_str)
     print("*" * 60)
 
 
 def print_task_desc(func) -> None:
-    """
-    Print task description
-    """
+    """Print task description."""
     print_logo()
     print(pretify_doc(func.info))
 
 
 def print_result(result) -> None:
-    """
-    Print result of the function
-    """
+    """Print result of the function."""
     if not result:
         print("Result: False/No result")
     else:
@@ -115,7 +109,6 @@ def print_menu(data_dict: dict) -> None:
 
 def main(data_dict: dict):
     """Main function for menu implementation"""
-
     while True:
         clear_screen()
         print_menu(data_dict)
