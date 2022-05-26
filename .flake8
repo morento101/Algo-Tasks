@@ -1,5 +1,4 @@
 [flake8]
-# it's not a bug that we aren't using all of hacking, ignore:
 # F812: list comprehension redefines ...
 # H101: Use TODO(NAME)
 # H202: assertRaises Exception too broad
@@ -11,13 +10,11 @@
 # H404: multi line docstring should start without a leading new line
 # H405: multi line docstring summary not separated with an empty line
 # H501: Do not use self.__dict__ for string formatting
-# W605, D200, D400: kostyl =)
-ignore = F812,H101,H202,H233,H301,H306,H401,H403,H404,H405,H501,W605,D200,D400,F403,F401,C901,D202,F541,D401
+ignore = F812
+max-line-length = 100
 exclude =
-    # Files or directories to skip
+    venv,
     .git,
     __pycache__,
-    docs/source/conf.py,
-    old,
-    build,dist
+    docs/source/conf.py
 max-complexity = 10
